@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import Header from '../components/Header'
+import Intro from '../components/Intro'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
@@ -94,7 +95,8 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
-            <Header
+            <Header onOpenArticle={this.handleOpenArticle} />
+            <Intro
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
             />
