@@ -7,6 +7,7 @@ const Header = props => (
       <ul>
         <li>
           <button
+            className="navbar-btn"
             onClick={() => {
               props.onOpenArticle('intro')
             }}
@@ -16,6 +17,7 @@ const Header = props => (
         </li>
         <li>
           <button
+            className="navbar-btn"
             onClick={() => {
               props.onOpenArticle('work')
             }}
@@ -25,6 +27,7 @@ const Header = props => (
         </li>
         <li>
           <button
+            className="navbar-btn"
             onClick={() => {
               props.onOpenArticle('about')
             }}
@@ -34,6 +37,7 @@ const Header = props => (
         </li>
         <li>
           <button
+            className="navbar-btn"
             onClick={() => {
               props.onOpenArticle('contact')
             }}

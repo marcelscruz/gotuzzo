@@ -40,7 +40,50 @@ class IndexPage extends React.Component {
     this.wrapperRef = node
   }
 
+  toggleOpenArticle(article) {
+    this.setState({
+      articleTimeout: !this.state.articleTimeout,
+    })
+
+    setTimeout(() => {
+      this.setState({
+        timeout: !this.state.timeout,
+      })
+    }, 325)
+
+    setTimeout(() => {
+      this.setState({
+        isArticleVisible: !this.state.isArticleVisible,
+        article: '',
+      })
+    }, 350)
+
+    setTimeout(() => {
+      this.setState({
+        isArticleVisible: !this.state.isArticleVisible,
+        article,
+      })
+    }, 400)
+
+    setTimeout(() => {
+      this.setState({
+        timeout: !this.state.timeout,
+      })
+    }, 425)
+
+    setTimeout(() => {
+      this.setState({
+        articleTimeout: !this.state.articleTimeout,
+      })
+    }, 450)
+  }
+
   handleOpenArticle(article) {
+    if (this.state.isArticleVisible) {
+      this.toggleOpenArticle(article)
+      return
+    }
+
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
       article,
@@ -79,7 +122,13 @@ class IndexPage extends React.Component {
   }
 
   handleClickOutside(event) {
-    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+    if (
+      this.wrapperRef &&
+      !this.wrapperRef.contains(event.target) &&
+      event.target.className !== 'navbar-btn'
+    ) {
+      console.log('this.wrapperRef: ', this.wrapperRef)
+      console.log('event.target: ', event.target.className)
       if (this.state.isArticleVisible) {
         this.handleCloseArticle()
       }
