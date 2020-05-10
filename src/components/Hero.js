@@ -11,9 +11,8 @@ const Hero = props => (
         <h1>Eduardo</h1>
         <p>
           Esse é o site bonitinho que o Marcel fez pro Dudu, porque assim ele
-          vai poder mostar o serviço dele na
-          <br />
-          internet e achar vários clientes bacanas.
+          vai poder mostar <br /> o serviço dele na internet e achar vários
+          clientes bacanas.
         </p>
       </div>
     </div>
