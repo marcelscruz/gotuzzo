@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "eduardo-gotuzzo-portfolio",
+  "description": "Eduardo Gotuzzo's Portfolio",
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
@@ -27,7 +27,6 @@
     "prettier": "^1.19.1"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "type": "git"
   }
 }
