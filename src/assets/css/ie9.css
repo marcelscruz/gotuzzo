@@ -27,21 +27,22 @@
 #header nav ul li {
   display: inline-block;
 }
-/* Intro */
 
-#intro .logo {
+/* Hero */
+
+#hero .logo {
   margin: 0 auto;
 }
 
-#intro .content {
+#hero .content {
   display: inline-block;
 }
 
-#intro nav ul {
+#hero nav ul {
   display: inline-block;
 }
 
-#intro nav ul li {
+#hero nav ul li {
   display: inline-block;
 }
 

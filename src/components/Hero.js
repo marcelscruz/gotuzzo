@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Intro = props => (
-  <main id="intro" style={props.timeout ? { display: 'none' } : {}}>
+const Hero = props => (
+  <main id="hero" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
       <span className="icon fa-diamond"></span>
     </div>
@@ -21,8 +21,8 @@ const Intro = props => (
   </main>
 )
 
-Intro.propTypes = {
+Hero.propTypes = {
   timeout: PropTypes.bool,
 }
 
-export default Intro
+export default Hero
