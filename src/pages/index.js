@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import Menu from '../components/Menu'
+import Logo from '../components/Logo'
 import Hero from '../components/Hero'
+import Menu from '../components/Menu'
 import Modal from '../components/Modal'
-import Footer from '../components/Footer'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -144,10 +144,9 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
-            <Hero
-              onOpenArticle={this.handleOpenArticle}
-              timeout={this.state.timeout}
-            />
+            <Logo timeout={this.state.timeout} />
+
+            <Hero timeout={this.state.timeout} />
             <Modal
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
