@@ -9,11 +9,7 @@ const Hero = props => (
     <div className="content">
       <div className="inner">
         <h1>Eduardo</h1>
-        <p>
-          Esse é o site bonitinho que o Marcel fez pro Dudu, porque assim ele
-          vai poder mostar <br /> o serviço dele na internet e achar vários
-          clientes bacanas.
-        </p>
+        <p>Consultor de Negócios</p>
       </div>
     </div>
   </main>
