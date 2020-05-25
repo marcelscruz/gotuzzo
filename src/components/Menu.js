@@ -9,6 +9,16 @@ const Menu = props => (
           <button
             className="navbar-btn"
             onClick={() => {
+              props.onOpenArticle('contact')
+            }}
+          >
+            Contact
+          </button>
+        </li>
+        <li>
+          <button
+            className="navbar-btn"
+            onClick={() => {
               props.onOpenArticle('intro')
             }}
           >
@@ -22,7 +32,7 @@ const Menu = props => (
               props.onOpenArticle('contact')
             }}
           >
-            Contact
+            Social icons
           </button>
         </li>
       </ul>
