@@ -12,7 +12,7 @@ const Menu = props => (
               props.onOpenArticle('contact')
             }}
           >
-            Contact
+            Contato
           </button>
         </li>
         <li>
@@ -22,7 +22,7 @@ const Menu = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Intro
+            Ma Work
           </button>
         </li>
         <li>
