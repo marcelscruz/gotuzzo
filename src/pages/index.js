@@ -157,7 +157,7 @@ class IndexPage extends React.Component {
               setWrapperRef={this.setWrapperRef}
             />
             <Menu onOpenArticle={this.handleOpenArticle} />
-            <Footer timeout={this.state.timeout} />
+            {/* <Footer timeout={this.state.timeout} /> */}
           </div>
           {/* <div id="bg"></div> */}
         </div>
