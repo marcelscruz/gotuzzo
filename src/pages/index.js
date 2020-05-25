@@ -148,7 +148,6 @@ class IndexPage extends React.Component {
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
             />
-            <Menu onOpenArticle={this.handleOpenArticle} />
             <Modal
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
@@ -157,9 +156,10 @@ class IndexPage extends React.Component {
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
+            <Menu onOpenArticle={this.handleOpenArticle} />
             <Footer timeout={this.state.timeout} />
           </div>
-          <div id="bg"></div>
+          {/* <div id="bg"></div> */}
         </div>
       </Layout>
     )

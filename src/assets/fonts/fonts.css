@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Alte DIN';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local('Alte DIN 1451 Mittelschrift'),
+    url('./din1451alt.woff') format('woff'),
+    url('./din1451alt.woff2') format('.woff2'),
+    url('./din1451alt.ttf') format('.ttf');
+}
+
+@font-face {
+  font-family: 'Alte DIN';
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local('Alte DIN 1451 Mittelschrift'),
+    url('./din1451alt-bold.woff') format('woff'),
+    url('./din1451alt-bold.woff2') format('.woff2'),
+    url('./din1451alt-bold.ttf') format('.ttf');
+}

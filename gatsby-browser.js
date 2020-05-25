@@ -1,7 +1,4 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
+// The following fonts import is necessary at build time because
+// if it's inject in the Layout component, every page change loads
+// the fonts again causing the text to flicker
+import './src/assets/fonts/fonts.css'
