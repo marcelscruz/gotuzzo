@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-import Header from '../components/Header'
+import Menu from '../components/Menu'
 import Hero from '../components/Hero'
-import Main from '../components/Main'
+import Modal from '../components/Modal'
 import Footer from '../components/Footer'
 
 class IndexPage extends React.Component {
@@ -144,12 +144,12 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
-            <Header onOpenArticle={this.handleOpenArticle} />
             <Hero
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
             />
-            <Main
+            <Menu onOpenArticle={this.handleOpenArticle} />
+            <Modal
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}

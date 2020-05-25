@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Header = props => (
-  <header id="header">
+const Menu = props => (
+  <div id="header">
     <nav>
       <ul>
         <li>
@@ -19,26 +19,6 @@ const Header = props => (
           <button
             className="navbar-btn"
             onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
-          <button
-            className="navbar-btn"
-            onClick={() => {
-              props.onOpenArticle('about')
-            }}
-          >
-            About
-          </button>
-        </li>
-        <li>
-          <button
-            className="navbar-btn"
-            onClick={() => {
               props.onOpenArticle('contact')
             }}
           >
@@ -47,11 +27,11 @@ const Header = props => (
         </li>
       </ul>
     </nav>
-  </header>
+  </div>
 )
 
-Header.propTypes = {
+Menu.propTypes = {
   onOpenArticle: PropTypes.func,
 }
 
-export default Header
+export default Menu
